@@ -30,10 +30,10 @@ class LoginViewController: UIViewController {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.userName = loginTF.text
     }
-    // Метод для скрытия клавиатуры тапом по экрану
-//    override func touchesBegan(_ touches: Set, with event: UIEvent?) {
-//        super .touchesBegan(touches, with: event)
-   //}
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    self.view.endEditing(true)
+    }
+    
     @IBAction func logOutPressButton(_ unwindSegue: UIStoryboardSegue) {
         loginTF.text = nil
         passwordTF.text = nil
