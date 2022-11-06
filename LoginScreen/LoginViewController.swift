@@ -37,7 +37,6 @@ class LoginViewController: UIViewController {
     @IBAction func logOutPressButton(_ unwindSegue: UIStoryboardSegue) {
         loginTF.text = nil
         passwordTF.text = nil
-
     }
     
     @IBAction func logInButton(_ sender: UIButton) {
@@ -46,12 +45,9 @@ class LoginViewController: UIViewController {
         
         if login.isEmpty || password.isEmpty {
             alert(message: "Please fill Login and Password")
-            
         } else if login != "Ruslan" || password != "1234" {
             alert(message: "Please fill corect Login or Password")
         }
-        
-        
     }
         
     @IBAction func rememberLoginPass(_ sender: UIButton) {
