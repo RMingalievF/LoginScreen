@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		8241038129181489006C3DF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241038029181489006C3DF6 /* AppDelegate.swift */; };
 		8241038329181489006C3DF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241038229181489006C3DF6 /* SceneDelegate.swift */; };
-		8241038529181489006C3DF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241038429181489006C3DF6 /* ViewController.swift */; };
+		8241038529181489006C3DF6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241038429181489006C3DF6 /* LoginViewController.swift */; };
 		8241038829181489006C3DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8241038629181489006C3DF6 /* Main.storyboard */; };
 		8241038A2918148A006C3DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824103892918148A006C3DF6 /* Assets.xcassets */; };
 		8241038D2918148A006C3DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8241038B2918148A006C3DF6 /* LaunchScreen.storyboard */; };
+		8241039529182A59006C3DF6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241039429182A59006C3DF6 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8241037D29181489006C3DF6 /* LoginScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8241038029181489006C3DF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8241038229181489006C3DF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8241038429181489006C3DF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8241038429181489006C3DF6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8241038729181489006C3DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		824103892918148A006C3DF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8241038C2918148A006C3DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8241038E2918148A006C3DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8241039429182A59006C3DF6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				8241038029181489006C3DF6 /* AppDelegate.swift */,
 				8241038229181489006C3DF6 /* SceneDelegate.swift */,
-				8241038429181489006C3DF6 /* ViewController.swift */,
+				8241038429181489006C3DF6 /* LoginViewController.swift */,
 				8241038629181489006C3DF6 /* Main.storyboard */,
+				8241039429182A59006C3DF6 /* WelcomeViewController.swift */,
 				824103892918148A006C3DF6 /* Assets.xcassets */,
 				8241038B2918148A006C3DF6 /* LaunchScreen.storyboard */,
 				8241038E2918148A006C3DF6 /* Info.plist */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8241038529181489006C3DF6 /* ViewController.swift in Sources */,
+				8241038529181489006C3DF6 /* LoginViewController.swift in Sources */,
+				8241039529182A59006C3DF6 /* WelcomeViewController.swift in Sources */,
 				8241038129181489006C3DF6 /* AppDelegate.swift in Sources */,
 				8241038329181489006C3DF6 /* SceneDelegate.swift in Sources */,
 			);
