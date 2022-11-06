@@ -12,20 +12,14 @@ class WelcomeViewController: UIViewController {
    
     @IBOutlet weak var userNameTF: UITextField!
     
-    
+    var userName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        userNameTF.text = userName
     }
     
 
-    
-    
-    @IBAction func logOutPressButton() {
-        dismiss(animated: true)
-    }
-    
 
 }

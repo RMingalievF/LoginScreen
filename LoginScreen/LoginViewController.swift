@@ -13,7 +13,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     
     @IBOutlet weak var forgotLoginButton: UIButton!
-    
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
     
@@ -26,6 +25,19 @@ class LoginViewController: UIViewController {
         passwordTF.layer.cornerRadius = 10
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.userName = loginTF.text
+    }
+    // Метод для скрытия клавиатуры тапом по экрану
+//    override func touchesBegan(_ touches: Set, with event: UIEvent?) {
+//        super .touchesBegan(touches, with: event)
+   //}
+    @IBAction func logOutPressButton(_ unwindSegue: UIStoryboardSegue) {
+        loginTF.text = nil
+        passwordTF.text = nil
+
+    }
     
     @IBAction func logInButton(_ sender: UIButton) {
         login = loginTF.text!.trimmingCharacters(in: .whitespaces)
@@ -37,13 +49,11 @@ class LoginViewController: UIViewController {
         } else if login != "Ruslan" || password != "1234" {
             alert(message: "Please fill corect Login or Password")
         }
-            
-            
-            
-        }
         
         
-        @IBAction func rememberLoginPass(_ sender: UIButton) {
+    }
+        
+    @IBAction func rememberLoginPass(_ sender: UIButton) {
             switch sender {
             case forgotLoginButton:
                 alert(message: "You login 'Ruslan'")
@@ -52,7 +62,7 @@ class LoginViewController: UIViewController {
             default:
                 break
             }
-        }
+    }
         
     private func alert(message: String) {
         let alert = UIAlertController(title: nil, message: "\(message)", preferredStyle: .alert)
@@ -60,9 +70,5 @@ class LoginViewController: UIViewController {
         alert.addAction(okButton)
         self.present(alert, animated: true)
         }
-        
 
-        
-    }
-    
-
+}
