@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        passwordTF.isSecureTextEntry = true
         loginTF.layer.cornerRadius = 10
         passwordTF.layer.cornerRadius = 10
     }
