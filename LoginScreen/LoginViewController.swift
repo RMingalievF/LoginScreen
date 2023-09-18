@@ -12,12 +12,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
-    @IBOutlet weak var forgotLoginButton: UIButton!
-    @IBOutlet weak var forgotPasswordButton: UIButton!
     
     
-    var login = ""
-    var password = ""
+    private var login = "Ruslan"
+    private var password = "1234"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +29,7 @@ class LoginViewController: UIViewController {
         welcomeVC.userName = loginTF.text
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    self.view.endEditing(true)
+    view.endEditing(true)
     }
     
     @IBAction func logOutPressButton(_ unwindSegue: UIStoryboardSegue) {
@@ -40,22 +38,26 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func logInButton(_ sender: UIButton) {
-        login = loginTF.text!.trimmingCharacters(in: .whitespaces)
-        password = passwordTF.text!.trimmingCharacters(in: .whitespaces)
+        let loginInTF = loginTF.text!.trimmingCharacters(in: .whitespaces)
+        let passwordInTF = passwordTF.text!.trimmingCharacters(in: .whitespaces)
         
-        if login.isEmpty || password.isEmpty {
+        if loginInTF.isEmpty || passwordInTF.isEmpty {
             alert(message: "Please fill Login and Password")
-        } else if login != "Ruslan" || password != "1234" {
+            loginTF.text = nil
+            passwordTF.text = nil
+        } else if loginInTF != login || passwordInTF != password {
             alert(message: "Please fill corect Login or Password")
+            loginTF.text = nil
+            passwordTF.text = nil
         }
     }
         
     @IBAction func rememberLoginPass(_ sender: UIButton) {
-            switch sender {
-            case forgotLoginButton:
-                alert(message: "You login 'Ruslan'")
-            case forgotPasswordButton:
-                alert(message: "You password '1234'")
+        switch sender.tag {
+            case 0:
+                alert(message: "You login \(login)")
+            case 1:
+                alert(message: "You password \(password)")
             default:
                 break
             }
