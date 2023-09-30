@@ -58,6 +58,9 @@
 		8241037F29181489006C3DF6 /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
+				828E11EE2AC83EC700F561A9 /* Models */,
+				828E11ED2AC83E3600F561A9 /* ViewControllers */,
+				828E11EC2AC83E2A00F561A9 /* Helpers */,
 				8241038029181489006C3DF6 /* AppDelegate.swift */,
 				8241038229181489006C3DF6 /* SceneDelegate.swift */,
 				8241038429181489006C3DF6 /* LoginViewController.swift */,
@@ -68,6 +71,27 @@
 				8241038E2918148A006C3DF6 /* Info.plist */,
 			);
 			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		828E11EC2AC83E2A00F561A9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		828E11ED2AC83E3600F561A9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		828E11EE2AC83EC700F561A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
