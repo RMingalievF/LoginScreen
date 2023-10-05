@@ -58,17 +58,14 @@
 		8241037F29181489006C3DF6 /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
+				828E11F32ACF240B00F561A9 /* Resources */,
+				828E11F22ACF239C00F561A9 /* Helpers */,
+				828E11F12ACF235900F561A9 /* Support */,
+				828E11F02ACF233C00F561A9 /* Storyboards */,
+				828E11EF2ACF232100F561A9 /* Extensions */,
 				828E11EE2AC83EC700F561A9 /* Models */,
 				828E11ED2AC83E3600F561A9 /* ViewControllers */,
 				828E11EC2AC83E2A00F561A9 /* Helpers */,
-				8241038029181489006C3DF6 /* AppDelegate.swift */,
-				8241038229181489006C3DF6 /* SceneDelegate.swift */,
-				8241038429181489006C3DF6 /* LoginViewController.swift */,
-				8241038629181489006C3DF6 /* Main.storyboard */,
-				8241039429182A59006C3DF6 /* WelcomeViewController.swift */,
-				824103892918148A006C3DF6 /* Assets.xcassets */,
-				8241038B2918148A006C3DF6 /* LaunchScreen.storyboard */,
-				8241038E2918148A006C3DF6 /* Info.plist */,
 			);
 			path = LoginScreen;
 			sourceTree = "<group>";
@@ -83,6 +80,8 @@
 		828E11ED2AC83E3600F561A9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8241039429182A59006C3DF6 /* WelcomeViewController.swift */,
+				8241038429181489006C3DF6 /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -92,6 +91,47 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		828E11EF2ACF232100F561A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		828E11F02ACF233C00F561A9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8241038629181489006C3DF6 /* Main.storyboard */,
+				8241038B2918148A006C3DF6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		828E11F12ACF235900F561A9 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8241038229181489006C3DF6 /* SceneDelegate.swift */,
+				8241038029181489006C3DF6 /* AppDelegate.swift */,
+				8241038E2918148A006C3DF6 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		828E11F22ACF239C00F561A9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		828E11F32ACF240B00F561A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				824103892918148A006C3DF6 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6T8ACJHK4P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginScreen/Info.plist;
+				INFOPLIST_FILE = LoginScreen/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -345,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6T8ACJHK4P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginScreen/Info.plist;
+				INFOPLIST_FILE = LoginScreen/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
