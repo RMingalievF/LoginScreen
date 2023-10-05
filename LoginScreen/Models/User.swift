@@ -8,6 +8,7 @@
 struct User {
     let login: String
     let password: String
+    let userInformation: UserInformation
 }
 
 
