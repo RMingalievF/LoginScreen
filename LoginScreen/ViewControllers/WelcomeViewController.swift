@@ -12,12 +12,12 @@ class WelcomeViewController: UIViewController {
    
     @IBOutlet weak var userNameTF: UITextField!
     
-    var userName: String!
+    var userName: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        userNameTF.text = userName
+        userNameTF.text = userName.userInformation.firsName
     }
     
 
