@@ -9,24 +9,33 @@ import UIKit
 
 class UserInformationViewController: UIViewController {
 
+    
+    @IBOutlet weak var photoImage: UIImageView! {
+        didSet {
+            photoImage.layer.cornerRadius = photoImage.frame.height / 2
+        }
+    }
+    
+    @IBOutlet weak var firstNameLabel: UILabel!
+    @IBOutlet weak var secondNameLabel: UILabel!
+
+    @IBOutlet weak var biogrhy: UITextView!
+    
+    
+    
+    
     var user: User!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        photoImage.image = UIImage(named:user.userInformation.pictue)
+        title = user.userInformation.fullName
+        firstNameLabel.text = user.userInformation.firsName
+        secondNameLabel.text = user.userInformation.secondName
+        biogrhy.text = user.userInformation.biography
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

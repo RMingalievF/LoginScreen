@@ -20,5 +20,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D19BB90-B8AB-4E3E-80DB-5B9CD0FFAB5B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoginScreen/ViewControllers/UserInformationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "photoImage"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "5D19BB90-B8AB-4E3E-80DB-5B9CD0FFAB5B - 5612e0697406a912"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginScreen.UserInformationViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; LoginScreen.UserInformationViewController"
+                  moduleName = "LoginScreen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruslanmingaliev/Library/Mobile%20Documents/com~apple~CloudDocs/iOs%20Developer/EducationJunior/LoginScreen/LoginScreen/ViewControllers/UserInformationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "5D19BB90-B8AB-4E3E-80DB-5B9CD0FFAB5B - 4db6cb2f2adb1e54"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginScreen.UserInformationViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;LoginScreen.UserInformationViewController&gt;"
+                  moduleName = "LoginScreen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruslanmingaliev/Library/Mobile%20Documents/com~apple~CloudDocs/iOs%20Developer/EducationJunior/LoginScreen/LoginScreen/ViewControllers/UserInformationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
