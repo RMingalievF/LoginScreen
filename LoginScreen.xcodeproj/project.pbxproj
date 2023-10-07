@@ -68,19 +68,10 @@
 				828E11F22ACF239C00F561A9 /* Helpers */,
 				828E11F12ACF235900F561A9 /* Support */,
 				828E11F02ACF233C00F561A9 /* Storyboards */,
-				828E11EF2ACF232100F561A9 /* Extensions */,
 				828E11EE2AC83EC700F561A9 /* Models */,
 				828E11ED2AC83E3600F561A9 /* ViewControllers */,
-				828E11EC2AC83E2A00F561A9 /* Helpers */,
 			);
 			path = LoginScreen;
-			sourceTree = "<group>";
-		};
-		828E11EC2AC83E2A00F561A9 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		828E11ED2AC83E3600F561A9 /* ViewControllers */ = {
@@ -100,13 +91,6 @@
 				828E11F42ACF254D00F561A9 /* User.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		828E11EF2ACF232100F561A9 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		828E11F02ACF233C00F561A9 /* Storyboards */ = {
