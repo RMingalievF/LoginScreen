@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -89,11 +88,11 @@
             </objects>
             <point key="canvasLocation" x="-240" y="-154"/>
         </scene>
-        <!--Item-->
+        <!--Person-->
         <scene sceneID="Hgp-3h-Wvn">
             <objects>
                 <navigationController toolbarHidden="NO" id="sEg-bd-eyT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="r6n-Kx-5fE"/>
+                    <tabBarItem key="tabBarItem" title="Person" image="person.fill" catalog="system" id="r6n-Kx-5fE"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="86S-N7-0QQ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -212,13 +211,11 @@
             <objects>
                 <tabBarController id="QLh-wL-cXv" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="F3u-Zq-47K"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" shadowImage="person.fill" catalog="system" id="FIX-b7-ok8">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FIX-b7-ok8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.1411764771" green="0.57647061349999995" blue="0.49803921579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <imageReference key="backgroundImage" image="person.fill" catalog="system" symbolScale="medium" variableValue="0.80000000000000004"/>
-                        <imageReference key="selectionIndicatorImage" image="person.fill" catalog="system" symbolScale="default"/>
                     </tabBar>
                     <connections>
                         <segue destination="f8H-aA-3KS" kind="relationship" relationship="viewControllers" id="x5V-01-s0I"/>
@@ -229,7 +226,7 @@
             </objects>
             <point key="canvasLocation" x="851" y="-154"/>
         </scene>
-        <!--Item-->
+        <!--Welcome-->
         <scene sceneID="NDz-gH-UmQ">
             <objects>
                 <viewController id="f8H-aA-3KS" customClass="WelcomeViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
@@ -272,7 +269,7 @@
                             <constraint firstItem="QJa-oQ-SQW" firstAttribute="centerX" secondItem="C98-RM-Iij" secondAttribute="centerX" id="wBy-lx-MW3"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="PFT-4X-f0l"/>
+                    <tabBarItem key="tabBarItem" title="Welcome" image="figure.pickleball" catalog="system" id="PFT-4X-f0l"/>
                     <navigationItem key="navigationItem" id="KH0-ZL-qmk"/>
                     <connections>
                         <outlet property="userNameTF" destination="ger-l4-tJC" id="Irz-fc-6L2"/>
@@ -286,6 +283,7 @@
     </scenes>
     <resources>
         <image name="Albert" width="1200" height="899"/>
+        <image name="figure.pickleball" catalog="system" width="120" height="128"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

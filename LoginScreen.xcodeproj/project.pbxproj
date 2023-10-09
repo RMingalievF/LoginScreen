@@ -65,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				828E11F32ACF240B00F561A9 /* Resources */,
-				828E11F22ACF239C00F561A9 /* Helpers */,
 				828E11F12ACF235900F561A9 /* Support */,
 				828E11F02ACF233C00F561A9 /* Storyboards */,
 				828E11EE2AC83EC700F561A9 /* Models */,
@@ -110,13 +109,6 @@
 				8241038E2918148A006C3DF6 /* Info.plist */,
 			);
 			path = Support;
-			sourceTree = "<group>";
-		};
-		828E11F22ACF239C00F561A9 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		828E11F32ACF240B00F561A9 /* Resources */ = {

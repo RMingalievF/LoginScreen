@@ -30,7 +30,7 @@ class UserInformationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         photoImage.image = UIImage(named:user.userInformation.pictue)
-        title = user.userInformation.fullName
+        //title = user.userInformation.fullName
         firstNameLabel.text = user.userInformation.firsName
         secondNameLabel.text = user.userInformation.secondName
         biogrhy.text = user.userInformation.biography
